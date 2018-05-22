@@ -7,21 +7,27 @@
 #include "RemoteControl.h"
 #include "tm1638.h"
 
-/*
-  pin 2 is connected to DataIn
-  pin 3 is connected to CLK
-  pin 4 is connected to CS
-*/
 
 #define SIMULATION true
+
+/**************************************
+*
+*   define your components
+*
+**************************************/
+
+// LED matrix with integrated max72xx
+
 #define MATRIX_DIN 8
 #define MATRIX_CS 6
 #define MATRIX_CLK 7
 #define MATRIX_NO_SEGMENTS 4
+
 #define LED_MATRIX true
 
 LedControl matrix1 = LedControl(MATRIX_DIN, MATRIX_CLK, MATRIX_CS, MATRIX_NO_SEGMENTS);
 
+// IR LED input
 
 #define RECV_PIN 5
 IRrecv irrecv(RECV_PIN);
