@@ -23,6 +23,7 @@ class SlimFont
 
   private:
     int startcol;
+    boolean wobble;
 
 };
 
