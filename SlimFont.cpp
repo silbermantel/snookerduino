@@ -105,8 +105,7 @@ void SlimFont::draw(const LedControl& lc, int number, boolean up) {
         dotArray[0] = B00000000;
         break;
       case 2:
-        dotArray[3] = B00110000;    void draw(const LedControl& , byte* , int  );
-
+        dotArray[3] = B00110000;
         dotArray[2] = B01001001;
         dotArray[1] = B01001001;
         dotArray[0] = B00000110;
