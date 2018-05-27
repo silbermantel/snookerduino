@@ -1,9 +1,9 @@
 #ifndef InputSerial_h
 #define InputSerial_h
 
-#include "OutputDevice.h"
+#include "InputDevice.h"
 
-class InputSerial : public OutputDevice {
+class InputSerial : public InputDevice {
 public:
     void stub();
 };

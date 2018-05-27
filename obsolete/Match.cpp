@@ -194,8 +194,8 @@ String Match::show(const LedControl& _matrix, const TM1638& _tm) {
 
   _tm.resetLEDs();
   _tm.lightLEDs(leftside.getFrames());
-  _tm.lightLEDs(4,rightside.getFrames());
-  
+  _tm.lightLEDs(4, rightside.getFrames());
+
 
   return (leftside.getName() + " " + leftside.getScore() + " - " + rightside.getScore() + " " + rightside.getName() + " break: " + currentbreak);
 };
@@ -247,16 +247,16 @@ void Match::endOfFrame(const LedControl& _matrix) {
   if (eofRequest)
   {
     switchPlayer();
-    if(leftside.getScore()>rightside.getScore())
+    if (leftside.getScore() > rightside.getScore())
       leftside.frameWon();
-      else
-    rightside.frameWon();
-      
+    else
+      rightside.frameWon();
+
     leftside.setScore(0);
     rightside.setScore(0);
     currentbreak = 0;
     scoreMatrix.draw(_matrix, '!', 20, true);
-    
+
     delay(500);
 
 

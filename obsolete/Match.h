@@ -15,11 +15,11 @@ class Match
     void addScore(int);
     String show(const TM1638& _tm);
     String show(const LedControl&);
-    String show(const LedControl&,const TM1638&);
+    String show(const LedControl&, const TM1638&);
     void endOfFrame(const LedControl&);
-    
+
   private:
-    void calcDigits(int tscore,int offset);
+    void calcDigits(int tscore, int offset);
 
     Player leftside;
     Player rightside;
@@ -28,8 +28,8 @@ class Match
     int h = -1;
     int t = -1;
     int o = -1;
-    int currentbreak=0;
-    boolean eofRequest=false;
+    int currentbreak = 0;
+    boolean eofRequest = false;
 };
 
 #endif
