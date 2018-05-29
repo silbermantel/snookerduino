@@ -12,14 +12,17 @@ class OutputSerial : public OutputDevice
     virtual String showFrames(int *);
     void printBoard();
     void printBoard(String left, String right);
+ 
   private:
-  	byte leftscore=0;
+    String OutputSerial::showDefault(int score[]) ;
+ /* 	byte leftscore=0;
   	byte rightscore=0;
   	byte leftframes=0;
   	byte rightframes=0;
   	byte leftbreak=0;
-  	byte rightbreak=0;
+  	byte rightbreak=0;*/
  	const byte spacing=18;
+  
 };
 
 #endif

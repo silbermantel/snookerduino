@@ -9,6 +9,8 @@ class MatchSnooker
     MatchSnooker();
     bool process(byte);
     void getScore(int & left, int & right);
+    void getFrames(int & left, int & right);
+    void getBreak(int & left, int & right);
 
   private:
     void addScore(int pot);

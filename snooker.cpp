@@ -59,6 +59,18 @@ void MatchSnooker::getScore(int & left, int & right) {
   right = rightside.getScore();
 
 }
+void MatchSnooker::getFrames(int & left, int & right) {
+
+  left = leftside.getFrames();
+  right = rightside.getFrames();
+
+}
+void MatchSnooker::getBreak(int & left, int & right) {
+
+  left = leftside.getBreak();
+  right = rightside.getBreak();
+
+}
 
 
 

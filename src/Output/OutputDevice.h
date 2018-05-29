@@ -5,11 +5,11 @@ class OutputDevice
 {
   public:
     String stub(int);
-    virtual String showScore(int *);
-    virtual String showBreak(int *);
-    virtual String showFrames(int *);
+    virtual String showScore(int *) = 0;
+    virtual String showBreak(int *) = 0;
+    virtual String showFrames(int *) = 0;
   private:
-    int foo = -1;
+    virtual String showDefault(int *) = 0;
 
 };
 

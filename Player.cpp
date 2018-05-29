@@ -21,8 +21,7 @@ Player::Player(String _name) {
 
 void Player::addScore(int _score) {
   score = score + _score;
-  //    Serial.begin(9600);
-  //    Serial.println("--->"+score);
+  currentbreak = currentbreak + _score;
 }
 int Player::getScore() {
   return (score);
@@ -42,3 +41,8 @@ void Player::frameWon() {
 int Player::getFrames() {
   return framesWon;
 };
+
+int Player::getBreak() {
+  return currentbreak;
+};
+

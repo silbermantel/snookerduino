@@ -16,6 +16,7 @@ class Player
     void setScore(int);
     void frameWon();
     int getFrames();
+    int getBreak();
 
   private:
     int score;

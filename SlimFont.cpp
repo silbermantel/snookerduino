@@ -255,7 +255,8 @@ void SlimFont::draw(const LedControl& lc, char letter, boolean up) {
 
 void SlimFont::draw(const LedControl& lc , byte* dotArray ) {
  // delay(1000);
-  int devices = lc.getDeviceCount() - 1;
+//  int devices = lc.getDeviceCount() - 1;
+  int devices=4;
   int displaycol = 0;
   int displayseg = devices;
   int curcol = 0;
@@ -271,7 +272,7 @@ void SlimFont::draw(const LedControl& lc , byte* dotArray ) {
 
 //       Serial.print("curcol: ");
 //       Serial.println(displayseg);
-    lc.setColumn(displayseg, displaycol, dotArray[i])  ;
+//    lc.setColumn(displayseg, displaycol, dotArray[i])  ;
   }
 
 
