@@ -15,9 +15,9 @@ Amazon wishlist for potential Hardware
 https://www.amazon.de/hz/wishlist/ls/1GASTVD0O77RC?&sort=default
 `
 
-#TODO
-* matchCodes
-* PINs and defines
-* libraries
+**phase 2 refactoring**
+
+* just when I started refactoring the code microsoft aquires GitHub. so the development branch moved back to gitlab and will be made public when it's done
+* the new code will make the addition of new hardware components a lot easier
 
 
